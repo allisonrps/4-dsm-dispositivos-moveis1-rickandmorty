@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Button, FlatList, Image } from 'react-native';
+import { View, Text, Button, FlatList, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import axios from 'axios';
 
 const Cards = ({ navigation }) => {
@@ -18,23 +18,45 @@ const Cards = ({ navigation }) => {
     fetchCards();
   }, []);
 
+  const deleteCard = (id) => {
+    setCards(cards.filter(card => card.id !== id));
+  };
+
   return (
-    <View>
+    <View style={styles.container}>
       <FlatList
         data={cards}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <View>
-            <Image source={{ uri: item.image }} style={{ width: 100, height: 100 }} />
-            <Text>{item.name}</Text>
-            <Text>{item.status}</Text>
-            <Text>{item.location.name}</Text>
-            <Button title="Ver Mais Detalhes" onPress={() => navigation.navigate('Detalhes', { item })} />
+          <View style={styles.card}>
+            <Image source={{ uri: item.image }} style={styles.image} />
+            <View style={styles.infoContainer}>
+              <Text style={styles.name}>{item.name}</Text>
+              <Text style={styles.status}>{item.status}</Text>
+              <Text style={styles.location}>{item.location.name}</Text>
+            </View>
+            <View style={styles.buttonsContainer}>
+              <TouchableOpacity 
+                style={styles.detailsButton}
+                onPress={() => navigation.navigate('Detalhes', { item })}
+              >
+                <Text style={styles.detailsButtonText}>Ver Mais Detalhes</Text>
+              </TouchableOpacity>
+              <TouchableOpacity 
+                style={styles.deleteButton}
+                onPress={() => deleteCard(item.id)}
+              >
+                <Text style={styles.deleteButtonText}>X</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         )}
       />
     </View>
   );
 };
+
+
+
 
 export default Cards;
