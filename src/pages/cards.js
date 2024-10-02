@@ -32,8 +32,6 @@ const Cards = ({ navigation }) => {
             <Image source={{ uri: item.image }} style={styles.image} />
             <View style={styles.infoContainer}>
               <Text style={styles.name}>{item.name}</Text>
-              <Text style={styles.status}>{item.status}</Text>
-              <Text style={styles.location}>{item.location.name}</Text>
             </View>
             <View style={styles.buttonsContainer}>
               <TouchableOpacity 

@@ -15,28 +15,28 @@ export const Input = styled.TextInput`
     border-width: 2px;
     border-color: #39ff14; /* Verde neon */
     border-radius: 10px;
-    padding: 7px;
+    padding: 5px;
     margin-vertical: 10px;
-    width: 80%;
+    width: 75%;
     color: #fff;
-    background-color: #333;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    background-color: #000000;
+    text-align: center;
 `;
 
 export const Button = styled.TouchableOpacity`
-    background-color: #444;
-    border-radius: 10px;
+    background-color: #000000;
+    border-radius: 100px;
     padding: 10px;
     width: 80%;
     align-items: center;
     margin: 5px;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center; 
 `;
 
 export const ButtonText = styled.Text`
     color: #39ff14; /* Verde neon */
     font-weight: bold;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center; 
 `;
 
 export const Form = styled.View`
@@ -46,47 +46,48 @@ export const Form = styled.View`
     width: 90%;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center;
 `;
 
 export const AddButton = styled.TouchableOpacity`
-    background-color: #444;
-    border-radius: 10px;
+    background-color: #000000;
+    border-radius: 100px;
     padding: 10px;
     width: 12%;
     align-items: center;
     margin: 10px;
     justify-content: center;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center;
 `;
 
 export const List = styled.FlatList`
     width: 100%;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center;
 `;
 
 export const Card = styled.View`
     align-items: center;
     margin: 10px 20px;
-    background: #333;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    background: #000000;
+    opacity: 0.8;
+    padding: 15px;
+    border-radius: 30px;
+    text-align: center;
 `;
 
 export const CardContent = styled.View`
     flex-direction: row;
     align-items: center;
     width: 100%;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center;
 `;
 
 export const Avatar = styled.Image`
-    width: 94px;
-    height: 94px;
-    border-radius: 32px;
-    background: #666;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+    background: #ffffff;
+    text-align: center; 
 `;
 
 export const CardInfos = styled.View`
@@ -94,60 +95,62 @@ export const CardInfos = styled.View`
     width: 100%;
     align-items: flex-start;
     padding-left: 20px;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center;
 `;
 
 export const Name = styled.Text`
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
     font-weight: bold;
-    margin-top: 4px;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    margin-top: 2px;
+    text-align: center;
+    text-transform: uppercase;
 `;
 
 export const Status = styled.Text`
-    font-size: 13px;
-    color: #39ff14; /* Verde neon */
-    margin-top: 4px;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #39ff14;
+    text-align: center; 
 `;
 
 export const LabelText = styled.Text`
-    font-size: 13px;
+    text-transform: uppercase;
+    font-size: 14px;
     color: #fff;
     font-weight: bold;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center; 
 `;
 
 export const InfoText = styled.Text`
-    font-size: 13px;
-    color: #39ff14; /* Verde neon */
-    margin-top: 4px;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #39ff14;
+    text-align: center;
 `;
 
 export const CardButtons = styled.View`
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center;
 `;
 
 export const CardButton = styled(RectButton)`
     margin-top: 10px;
-    background: #444;
-    width: 47%;
+    background: #000000;
+    width: 45%;
     justify-content: center;
     align-items: center;
-    height: 36px;
+    height: 25px;
     border-radius: 10px;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center; 
 `;
 
 export const CardButtonText = styled.Text`
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
-    color: #39ff14; /* Verde neon */
+    color: #ffffff;
     text-transform: uppercase;
-    text-align: center; /* Centraliza o texto e o placeholder */
+    text-align: center; 
 `;
