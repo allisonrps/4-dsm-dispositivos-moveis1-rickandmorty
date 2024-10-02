@@ -21,7 +21,7 @@ export default class Character extends Component {
         const formattedDate = moment(character.created).format("MMMM Do YYYY, h:mm:ss a");
 
         return(
-            <Container style={{ justifyContent: 'top', paddingTop: 10 }}>
+            <Container style={{ justifyContent: 'top', paddingTop: 15 }}>
                 <Card style={{ width: '90%' }}>
                     <Avatar source={{uri: character.image}} />
                     

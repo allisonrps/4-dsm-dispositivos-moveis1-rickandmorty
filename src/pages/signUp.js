@@ -16,7 +16,7 @@ const SignUp = () => {
 
     const handleLogin = () => {
         console.log(`CADASTRO - Nome: ${name} - Telefone: ${phone} - CPF: ${cpf} - E-mail: ${email} - Curso: ${course} - Senha: ${password}`);
-        alert('Cadastro realizado com sucesso! (De mentirinha)');
+        alert('Cadastro realizado com sucesso!');
         navigation.navigate('login');
         Keyboard.dismiss();
     };
@@ -24,14 +24,14 @@ const SignUp = () => {
     return (
         <Container>
             <Input
-                placeholder="Nome"
+                placeholder="NOME"
                 placeholderTextColor="#ccc"
                 color="#000"
                 value={name}
                 onChangeText={setName}
             />
             <Input
-                placeholder="Telefone"
+                placeholder="TELEFONE"
                 keyboardType="phone-pad"
                 placeholderTextColor="#ccc"
                 color="#000"
@@ -47,7 +47,7 @@ const SignUp = () => {
                 onChangeText={setCpf}
             />
             <Input
-                placeholder="E-mail"
+                placeholder="E-MAIL"
                 keyboardType="email-address"
                 placeholderTextColor="#ccc"
                 color="#000"
@@ -55,14 +55,14 @@ const SignUp = () => {
                 onChangeText={setEmail}
             />
             <Input
-                placeholder="Curso"
+                placeholder="CURSO"
                 placeholderTextColor="#ccc"
                 color="#000"
                 value={course}
                 onChangeText={setCourse}
             />
             <Input
-                placeholder="Senha"
+                placeholder="SENHA"
                 keyboardType="numeric"
                 placeholderTextColor="#ccc"
                 color="#000"
@@ -71,7 +71,7 @@ const SignUp = () => {
                 onChangeText={setPassword}
             />
             <Button onPress={handleLogin}>
-                <ButtonText>Salvar</ButtonText>
+                <ButtonText>CADASTRAR</ButtonText>
             </Button>
         </Container>
     );

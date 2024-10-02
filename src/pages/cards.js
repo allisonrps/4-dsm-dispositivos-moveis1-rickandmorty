@@ -38,7 +38,7 @@ const Cards = ({ navigation }) => {
                 style={styles.detailsButton}
                 onPress={() => navigation.navigate('Detalhes', { item })}
               >
-                <Text style={styles.detailsButtonText}>Ver Mais Detalhes</Text>
+                <Text style={styles.detailsButtonText}>Mais Detalhes</Text>
               </TouchableOpacity>
               <TouchableOpacity 
                 style={styles.deleteButton}

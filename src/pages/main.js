@@ -56,7 +56,7 @@ export default class Main extends Component {
             const data = response.data.results[0];
 
             if(characters.find(character => character.id === data.id)) {
-                alert("Personagem já adicionado");
+                alert("PERSONAGEM ADICIONADO!");
                 this.setState({
                     loading: false,
                     newCharacter: '',
@@ -70,10 +70,13 @@ export default class Main extends Component {
             const mappedData = {
                 id: data.id,
                 name: data.name,
+                gender: data.gender,
                 status: data.status,
                 species: data.species,
+                type: data.type,
                 image: data.image,
                 location: data.location.name,
+                origin: data.origin?.name,
                 episode: firstEpisodeResponse.data.name,
                 created: data.created,
             };
@@ -87,7 +90,7 @@ export default class Main extends Component {
             Keyboard.dismiss();
         } catch (error) {
             console.log(error);
-            alert('Algo de errado não está certo!');
+            alert('Algo de errado!');
             this.setState({ loading: false });
             Keyboard.dismiss();
         }
@@ -102,8 +105,8 @@ export default class Main extends Component {
                     <Input
                         autoCorrect={false}
                         autoCapitalize="none"
-                        placeholder="Adicionar personagem"
-                        placeholderTextColor="#ccc"
+                        placeholder="ADICIONAR PERSONAGEM"
+                        placeholderTextColor="#FFFFFF"
                         color="#000"
                         value={newCharacter}
                         onChangeText={text => this.setState({newCharacter: text})}
@@ -114,7 +117,7 @@ export default class Main extends Component {
                         {loading ? (
                             <ActivityIndicator color="#fff" />
                         ) : (
-                            <Icon name="add" size={20} color="#fff" />
+                            <Icon name="add" size={20} color="#fff" border-size="2px" border-color="#ffffff"/>
                         )}
                     </AddButton>
                 </Form>
@@ -142,7 +145,7 @@ export default class Main extends Component {
                                         this.props.navigation.navigate('character', { character: item });
                                     }}
                                 >
-                                    <CardButtonText>Mais detalhes</CardButtonText>
+                                    <CardButtonText>+ DETALHES</CardButtonText>
                                 </CardButton>
                                 <CardButton
                                     onPress={() => {
@@ -152,9 +155,9 @@ export default class Main extends Component {
                                             ),
                                         });
                                     }}
-                                    style={{backgroundColor: 'red', borderRadius: 10}}
+                                    style={{backgroundColor: 'red', borderRadius: 20}}
                                 >
-                                    <CardButtonText>Excluir</CardButtonText>
+                                    <CardButtonText>EXCLUIR</CardButtonText>
                                 </CardButton>
                             </CardButtons>
                         </Card>

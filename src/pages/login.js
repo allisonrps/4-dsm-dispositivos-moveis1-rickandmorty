@@ -24,27 +24,27 @@ const Login = () => {
     return (
         <Container>
             <Input
-                placeholder="Usuário"
+                placeholder="USUÁRIO"
                 keyboardType="email-address"
-                placeholderTextColor="#ccc"
+                placeholderTextColor="#ffffff"
                 color="#000"
                 value={user}
                 onChangeText={setUser}
             />
             <Input
-                placeholder="Senha"
+                placeholder="SENHA"
                 keyboardType="numeric"
-                placeholderTextColor="#ccc"
+                placeholderTextColor="#ffffff"
                 color="#000"
                 secureTextEntry={true}
                 value={password}
                 onChangeText={setPassword}
             />
             <Button onPress={handleLogin}>
-                <ButtonText>Entrar</ButtonText>
+                <ButtonText>ENTRAR</ButtonText>
             </Button>
             <Button onPress={handleSignUp}>
-                <ButtonText>Cadastrar</ButtonText>
+                <ButtonText>CADASTRAR</ButtonText>
             </Button>
         </Container>
     );
