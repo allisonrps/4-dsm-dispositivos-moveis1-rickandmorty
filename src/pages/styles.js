@@ -100,7 +100,7 @@ export const CardInfos = styled.View`
 
 export const Name = styled.Text`
     font-size: 20px;
-    color: #fff;
+    color: yellow;
     font-weight: bold;
     margin-top: 2px;
     text-align: center;
@@ -116,7 +116,7 @@ export const Status = styled.Text`
 
 export const LabelText = styled.Text`
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     font-weight: bold;
     text-align: center; 
@@ -125,6 +125,7 @@ export const LabelText = styled.Text`
 export const InfoText = styled.Text`
     text-transform: uppercase;
     font-size: 14px;
+
     color: #39ff14;
     text-align: center;
 `;
