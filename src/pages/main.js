@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import api from '../services/api';
 import { Keyboard, ActivityIndicator } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import api from '../services/api';
 import {
     Container,
     Form,

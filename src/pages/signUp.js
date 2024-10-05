@@ -16,7 +16,7 @@ const SignUp = () => {
 
     const handleLogin = () => {
         console.log(`CADASTRO - Nome: ${name} - Telefone: ${phone} - CPF: ${cpf} - E-mail: ${email} - Curso: ${course} - Senha: ${password}`);
-        alert('Cadastro realizado com sucesso!');
+        alert('Cadastro realizado!');
         navigation.navigate('login');
         Keyboard.dismiss();
     };
