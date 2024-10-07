@@ -17,7 +17,7 @@ const Login = () => {
     };
 
     const handleSignUp = () => {
-        navigation.navigate('signUp');
+        navigation.navigate('register');
         Keyboard.dismiss();
     };
 

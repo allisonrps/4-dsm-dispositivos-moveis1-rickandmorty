@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import Login from './pages/login';
-import SignUp from './pages/signUp';
+import Register from './pages/register';
 import Main from './pages/main';
 import Character from './pages/character';
 
@@ -29,8 +29,8 @@ export default function Routes(){
                     }}
                 />
                 <Stack.Screen 
-                    name='signUp'
-                    component={SignUp}
+                    name='register'
+                    component={Register}
                     options={{
                         title: 'CADASTRO',
                         headerTitleAlign: 'center',

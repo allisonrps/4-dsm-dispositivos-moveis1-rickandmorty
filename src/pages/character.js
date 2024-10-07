@@ -12,7 +12,7 @@ import {
 } from "./styles";
 
 
-export default class Character extends Component {
+export default class Details extends Component {
 
     render() {
         const { route } = this.props;

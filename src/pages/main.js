@@ -105,7 +105,7 @@ export default class Main extends Component {
                     <Input
                         autoCorrect={false}
                         autoCapitalize="none"
-                        placeholder="ADICIONAR PERSONAGEM"
+                        placeholder="PESQUISAR PERSONAGEM"
                         placeholderTextColor="#FFFFFF"
                         color="#000"
                         value={newCharacter}
@@ -157,7 +157,7 @@ export default class Main extends Component {
                                     }}
                                     style={{backgroundColor: 'red', borderRadius: 20}}
                                 >
-                                    <CardButtonText>EXCLUIR</CardButtonText>
+                                    <CardButtonText>DELETAR</CardButtonText>
                                 </CardButton>
                             </CardButtons>
                         </Card>

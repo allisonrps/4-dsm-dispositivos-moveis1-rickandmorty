@@ -3,7 +3,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Keyboard } from 'react-native';
 import { Container, Input, Button, ButtonText } from './styles';
 
-const SignUp = () => {
+const Register = () => {
 
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
@@ -77,4 +77,4 @@ const SignUp = () => {
     );
 };
 
-export default SignUp;
+export default Register;
